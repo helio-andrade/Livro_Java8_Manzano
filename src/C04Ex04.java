@@ -19,5 +19,4 @@ public class C04Ex04 {
 		System.out.println("\nR = " + a + " + " + b + " = " + r);
 
 	}
-
 }
