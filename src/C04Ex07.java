@@ -1,3 +1,10 @@
+/* 
+ * Este programa efetua a leitura de um valor numérico
+ * inteiro referente aos códigos: 1, 2 ou 3. Qualquer outro
+ * valor dever apresentar a mensagem "Código inválido!"
+ * 
+ * */
+
 import java.util.Scanner;
 
 public class C04Ex07 {
