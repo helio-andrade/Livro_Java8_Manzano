@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class C04xE05 {
+public class C04Ex05 {
 
 	public static void main(String[] args) {
 		int a, b, r;
