@@ -20,22 +20,22 @@ public class ConversaoDeTemperaturas {
 
 	    switch (opcao) {
 	        case 1:
-	            System.out.printf("%.2f°C = %.2f K", temperatura, temperatura + 273);
+	            System.out.printf("%.2f°C = %.2f K", temperatura, temperatura + 273.15);
 	            break;
 	        case 2:
 	            System.out.printf("%.2f°C = %.2f°F", temperatura, (9.0/5.0)*temperatura + 32);
 	            break;
 	        case 3:
-	            System.out.printf("%.2f K = %.2f°C", temperatura, temperatura - 273);
+	            System.out.printf("%.2f K = %.2f°C", temperatura, temperatura - 273.15);
 	            break;
 	        case 4:
-	            System.out.printf("%.2f K = %.2f°F", temperatura, (9.0/5.0)*(temperatura - 273) + 32);
+	            System.out.printf("%.2f K = %.2f°F", temperatura, (9.0/5.0)*(temperatura - 273.15) + 32);
 	            break;
 	        case 5:
 	            System.out.printf("%.2f°F = %.2f°C", temperatura, (5.0/9.0)*(temperatura - 32));
 	            break;
 	        case 6:
-	            System.out.printf("%.2f°F = %.2f K", temperatura, (5.0/9.0)*(temperatura - 32) + 273);
+	            System.out.printf("%.2f°F = %.2f K", temperatura, (5.0/9.0)*(temperatura - 32) + 273.15);
 	            break;
 	        default:
 	            System.out.println("Opção inválida.");
