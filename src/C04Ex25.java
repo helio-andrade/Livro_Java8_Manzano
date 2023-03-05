@@ -1,3 +1,4 @@
+// Casting impícito
 
 public class C04Ex25 {
 	public static void main(String[] args) {
