@@ -7,39 +7,39 @@ public class C05Ex01 {
         double numero = 4.75;
 
         // Funções trigonométricas
-        double valorSeno = Math.sin(numero); // Calcula o seno do número
-        double valorCosseno = Math.cos(numero); // Calcula o cosseno do número
-        double valorTangente = Math.tan(numero); // Calcula a tangente do número
+        double valorSeno = Math.sin(numero);
+        double valorCosseno = Math.cos(numero);
+        double valorTangente = Math.tan(numero);
 
         // Funções trigonométricas inversas
-        double valorArcCos = Math.acos(valorCosseno); // Calcula o arco cosseno do valor do cosseno
-        double valorArcSin = Math.asin(valorSeno); // Calcula o arco seno do valor do seno
-        double valorArcTan = Math.atan(valorTangente); // Calcula o arco tangente do valor da tangente
+        double valorArcCos = Math.acos(valorCosseno);
+        double valorArcSin = Math.asin(valorSeno);
+        double valorArcTan = Math.atan(valorTangente);
 
         // Funções exponenciais e logarítmicas
-        double valorExponencial = Math.exp(numero); // Calcula a exponencial do número
-        double valorLogaritmo = Math.log(numero); // Calcula o logaritmo natural do número
-        double valorPotencia = Math.pow(numero, 2); // Calcula a potência do número elevado ao quadrado
+        double valorExponencial = Math.exp(numero);
+        double valorLogaritmo = Math.log(numero);
+        double valorPotencia = Math.pow(numero, 2);
 
         // Funções de arredondamento
-        double valorMais = Math.ceil(numero); // Arredonda para cima
-        double valorMenos = Math.floor(numero); // Arredonda para baixo
-        double valorArredondado = Math.round(numero); // Arredonda para o número inteiro mais próximo
-        double valorArredondadoRint = Math.rint(numero); // Arredonda para o número inteiro mais próximo seguindo regras de arredondamento
-        long valorArredondadoLong = Math.round(numero); // Arredonda para o número inteiro mais próximo e converte para long
-        int valorAbsoluto = Math.abs(-10); // Retorna o valor absoluto (positivo) do número
+        double valorMais = Math.ceil(numero);
+        double valorMenos = Math.floor(numero);
+        double valorArredondado = Math.round(numero);
+        double valorArredondadoRint = Math.rint(numero);
+        long valorArredondadoLong = Math.round(numero);
+        int valorAbsoluto = Math.abs(-10);
 
         // Funções de mínimo e máximo
-        double valorMinimo = Math.min(10, 20); // Retorna o menor valor entre dois números
-        double valorMaximo = Math.max(10, 20); // Retorna o maior valor entre dois números
+        double valorMinimo = Math.min(10, 20);
+        double valorMaximo = Math.max(10, 20);
 
         // Funções de raiz quadrada e cúbica
-        double valorRaizQuadrada = Math.sqrt(numero); // Calcula a raiz quadrada do número
-        double valorRaizCubica = Math.cbrt(numero); // Calcula a raiz cúbica do número
+        double valorRaizQuadrada = Math.sqrt(numero);
+        double valorRaizCubica = Math.cbrt(numero);
 
         // Constantes
-        double pi = Math.PI; // Valor de π (pi)
-        double euler = Math.E; // Valor de e (número de Euler)
+        double pi = Math.PI;
+        double euler = Math.E;
 
         // Exibição dos resultados
         System.out.println("sin(" + numero + ") = " + valorSeno);
@@ -61,8 +61,7 @@ public class C05Ex01 {
         System.out.println("max(10, 20) = " + valorMaximo);
         System.out.println("sqrt(" + numero + ") = " + valorRaizQuadrada);
         System.out.println("cbrt(" + numero + ") = " + valorRaizCubica);
-        System.out.println("pi = " + pi); // Valor de π (pi)
-        System.out.println("euler = " + euler); // Valor de e (número de Euler)
+        System.out.println("pi = " + pi);
+        System.out.println("euler = " + euler);
     }
 }
-
