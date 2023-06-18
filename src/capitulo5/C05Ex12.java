@@ -1,7 +1,6 @@
 package capitulo5;
 
 import java.util.Scanner;
-import java.io.*;
 
 public class C05Ex12 {
 	public static void main(String[] args) {
