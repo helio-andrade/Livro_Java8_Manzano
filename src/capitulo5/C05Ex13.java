@@ -1,3 +1,8 @@
+/* 
+ * Extração de código ASCII de uma sequência de caracteres
+ * (de String para código ASCII)
+ * 
+ * */
 package capitulo5;
 
 public class C05Ex13 {

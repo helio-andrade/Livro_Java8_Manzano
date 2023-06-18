@@ -1,3 +1,9 @@
+/*
+ * De um código ASCII para uma sequência de caracteres
+ * (de código ASCII para String)
+ * 
+ * */
+
 package capitulo5;
 
 import java.util.Scanner;

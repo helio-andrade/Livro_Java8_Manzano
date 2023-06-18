@@ -1,3 +1,5 @@
+// De dupla precisão p/ sequência de caractere (de double para String)
+
 package capitulo5;
 
 public class C05Ex14 {
