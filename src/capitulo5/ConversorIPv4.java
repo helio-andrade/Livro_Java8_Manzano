@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class ConversorIPv4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+			System.out.print("Digite o endereço IPv4 (Ex.: 192.167.1.5): ");
+			String ipv4Decimal = scanner.nextLine();
 
-        System.out.print("Digite o endereço IPv4 (Ex.: 192.167.1.5): ");
-        String ipv4Decimal = scanner.nextLine();
-
-        String ipv4Binario = converterIPv4ParaBinario(ipv4Decimal);
-        System.out.println("Endereço IPv4 em binário: " + ipv4Binario);
+			String ipv4Binario = converterIPv4ParaBinario(ipv4Decimal);
+			System.out.println("Endereço IPv4 em binário: " + ipv4Binario);
+		}
     }
 
     private static String converterIPv4ParaBinario(String ipv4Decimal) {
