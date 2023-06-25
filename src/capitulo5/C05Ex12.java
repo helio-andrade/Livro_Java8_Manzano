@@ -13,10 +13,11 @@ public class C05Ex12 {
 		int ascii;
 		String str;
 		
-		Scanner s = new Scanner(System.in);
-		
-		System.out.println("Digite um código ASCII: ");
-		ascii = s.nextInt();
+		try (Scanner s = new Scanner(System.in)) {
+			System.out.println("Digite um código ASCII: ");
+			ascii = s.nextInt();
+		}
+				
 		
 		//str = new Character(char(ascii)).toString();
 		
