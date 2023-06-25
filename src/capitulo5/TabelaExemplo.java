@@ -1,3 +1,5 @@
+package capitulo5;
+
 public class TabelaExemplo {
     public static void main(String[] args) {
         String[] campos = { "Nome", "Idade", "Cidade" };
