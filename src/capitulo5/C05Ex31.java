@@ -7,13 +7,13 @@ import java.time.Month;
 public class C05Ex31 {
 
 	public static void main(String[] args) {
-		LocalDate dataSistema 	= LocalDate.now();				// Data do sistema
-		DayOfWeek diaSemana 	= dataSistema.getDayOfWeek();	// Dia da semana
-		int		  diaMes  		= dataSistema.getDayOfMonth();	// Dia do mes
-		Month	  mes  			= dataSistema.getMonth();		// Mês do ano
-		int 	  numeroMes		= dataSistema.getMonthValue();	// Número do mês
-		int 	  ano			= dataSistema.getYear();		// Ano corrente
-		int		  diasAno		= dataSistema.getDayOfYear();	// Numero de dias do ano
+		LocalDate	dataSistema	= LocalDate.now();				// Data do sistema
+		DayOfWeek	diaSemana	= dataSistema.getDayOfWeek();	// Dia da semana
+		int			diaMes 		= dataSistema.getDayOfMonth();	// Dia do mes
+		Month		mes 		= dataSistema.getMonth();		// Mês do ano
+		int			numeroMes	= dataSistema.getMonthValue();	// Número do mês
+		int			ano			= dataSistema.getYear();		// Ano corrente
+		int			diasAno		= dataSistema.getDayOfYear();	// Numero de dias do ano
 		
 		System.out.println("\nData do Sistema ..........: " + dataSistema);	
 		System.out.println("Dia da Semana ............: " + diaSemana);		
