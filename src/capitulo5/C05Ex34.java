@@ -14,5 +14,6 @@ public class C05Ex34 {
         System.out.println("Dia da semana (extenso) .: " + diaSemana);
         System.out.println("Dia da semana (numero) ..: " + diaSemanaInt);
         System.out.println("Numero de dias no ano ...: " + diasAno);
+        
     }
 }
