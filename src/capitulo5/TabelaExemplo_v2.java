@@ -21,12 +21,8 @@ public class TabelaExemplo_v2 {
         for (String[] linha : dados) {
             imprimirValoresFormatados(linha, largurasColunas);
 
-            if (linha == dados[0]) {
-                imprimirLinhaDelimitadores(numColunas, largurasColunas);
-            }
+            imprimirLinhaDelimitadores(numColunas, largurasColunas);
         }
-
-        imprimirLinhaDelimitadores(numColunas, largurasColunas);
     }
 
     private static int[] calcularLargurasColunas(String[][] dados) {
@@ -36,9 +32,7 @@ public class TabelaExemplo_v2 {
         for (String[] linha : dados) {
             for (int i = 0; i < numColunas; i++) {
                 int larguraValor = linha[i].length();
-                if (larguraValor > largurasColunas[i]) {
-                    largurasColunas[i] = larguraValor;
-                }
+                largurasColunas[i] = Math.max(largurasColunas[i], larguraValor);
             }
         }
 
@@ -48,18 +42,22 @@ public class TabelaExemplo_v2 {
     private static void imprimirLinhaDelimitadores(int numColunas, int[] largurasColunas) {
         for (int largura : largurasColunas) {
             System.out.print("+");
-            for (int i = 0; i < largura + 2; i++) {
-                System.out.print("-");
-            }
+            imprimirCaractere('-', largura + 2);
         }
         System.out.println("+");
     }
 
     private static void imprimirValoresFormatados(String[] valores, int[] largurasColunas) {
         for (int i = 0; i < valores.length; i++) {
-            String formato = "| %" + (largurasColunas[i] + 1) + "s ";
+            String formato = "| %" + largurasColunas[i] + "s ";
             System.out.printf(formato, valores[i]);
         }
         System.out.println("|");
+    }
+
+    private static void imprimirCaractere(char caractere, int quantidade) {
+        for (int i = 0; i < quantidade; i++) {
+            System.out.print(caractere);
+        }
     }
 }
