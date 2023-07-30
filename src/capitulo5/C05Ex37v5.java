@@ -1,9 +1,9 @@
 package capitulo5;
 
 import java.text.DecimalFormat;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class C05Ex37v5 {
@@ -12,7 +12,7 @@ public class C05Ex37v5 {
         Scanner scanner = new Scanner(System.in);
 
         // Exibe o cabeçalho do programa
-        System.out.println("\n*** Estacionamento 24 HORAS ***\n");
+        System.out.println("\n*** Estacionamento 24 HORAS ***\n\n");
 
         // Solicita a data e hora de entrada ao usuário
         System.out.println("Data e Hora de Entrada [dd/MM/yyyy HH:mm:ss]: ");
@@ -26,24 +26,49 @@ public class C05Ex37v5 {
         System.out.println("Valor da Hora [R$]: ");
         double valorHora = scanner.nextDouble();
 
-        // Calcula o valor total a ser pago pelo estacionamento
-        double valorTotal = calcularValorTotal(entradaDataHora, saidaDataHora, valorHora);
+        // Calcula a fatura do estacionamento (tempo de permanência e valor total)
+        FaturaEstacionamento fatura = calcularFaturaEstacionamento(entradaDataHora, saidaDataHora, valorHora);
 
-        // Exibe o valor total a ser pago pelo estacionamento
+        // Exibe a fatura do estacionamento (tempo de permanência e valor total)
         DecimalFormat df = new DecimalFormat("0.00");
-        System.out.println("Valor a ser pago: R$ " + df.format(valorTotal));
+        System.out.println("Tempo de Permanência: " + fatura.getTempoPermanencia() + " minutos");
+        System.out.println("Valor a ser pago: R$ " + df.format(fatura.getValorTotal()));
 
         // Fecha o Scanner para liberar recursos
         scanner.close();
     }
 
-    private static double calcularValorTotal(String entradaDataHora, String saidaDataHora, double valorHora) {
+    private static FaturaEstacionamento calcularFaturaEstacionamento(String entradaDataHora, String saidaDataHora, double valorHora) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-        LocalDateTime data1 = LocalDateTime.parse(entradaDataHora, formatter);
-        LocalDateTime data2 = LocalDateTime.parse(saidaDataHora, formatter);
+        LocalDateTime dataEntrada = LocalDateTime.parse(entradaDataHora, formatter);
+        LocalDateTime dataSaida = LocalDateTime.parse(saidaDataHora, formatter);
 
+        // Calcula o tempo de permanência no estacionamento
+        Duration duracao = Duration.between(dataEntrada, dataSaida);
+        long minutosPermanencia = duracao.toMinutes();
+
+        // Calcula o valor total a ser pago pelo estacionamento
         double fracaoHora = valorHora / 60;
+        double valorTotal = minutosPermanencia * fracaoHora;
 
-        return Math.abs(ChronoUnit.SECONDS.between(data1, data2)) / 60 * fracaoHora;
+        return new FaturaEstacionamento(minutosPermanencia, valorTotal);
+    }
+
+    private static class FaturaEstacionamento {
+        private long tempoPermanencia;
+        private double valorTotal;
+
+        public FaturaEstacionamento(long tempoPermanencia, double valorTotal) {
+            this.tempoPermanencia = tempoPermanencia;
+            this.valorTotal = valorTotal;
+        }
+
+        public long getTempoPermanencia() {
+            return tempoPermanencia;
+        }
+
+        public double getValorTotal() {
+            return valorTotal;
+        }
     }
 }
