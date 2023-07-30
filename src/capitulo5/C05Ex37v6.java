@@ -10,20 +10,17 @@ public class C05Ex37v6 {
 
     public static void main(String[] args) {
         // Exibe mensagem de cabeçalho
-        JOptionPane.showMessageDialog(null, 
-        		"*** Estacionamento 24 HORAS ***");
+        JOptionPane.showMessageDialog(null, "*** Estacionamento 24 HORAS ***");
 
         // Solicita a data e hora de entrada ao usuário
         String entrada = JOptionPane.showInputDialog(
         		"Entrada [dd/MM/yyyy HH:mm:ss]: ");
-        
         // Solicita a data e hora de saída ao usuário
         String saida = JOptionPane.showInputDialog(
         		"Saída [dd/MM/yyyy HH:mm:ss]: ");
-        
         // Solicita o valor da hora de estacionamento ao usuário
-        double valorHora = Double.parseDouble(JOptionPane.showInputDialog(
-        		"Valor Hora [R$]: "));
+        double valorHora = Double.parseDouble(
+        		JOptionPane.showInputDialog("Valor Hora [R$]: "));
 
         // Calcula a fatura do estacionamento (tempo de permanência e valor total)
         Fatura fatura = calcularFatura(entrada, saida, valorHora);
@@ -32,9 +29,9 @@ public class C05Ex37v6 {
         DecimalFormat df = new DecimalFormat("0.00");
 
         // Exibe o tempo de permanência no estacionamento
-        JOptionPane.showMessageDialog(null, 
+        JOptionPane.showMessageDialog(null,
         		"Permanência: " + fatura.getPermanencia() + " minutos");
-        
+
         // Exibe o valor a ser pago pelo estacionamento
         JOptionPane.showMessageDialog(null, 
         		"Valor a ser pago: R$ " + df.format(fatura.getValor()));
