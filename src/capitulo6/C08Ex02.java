@@ -29,7 +29,7 @@ public class C08Ex02 {
 
         do {
             clearScreen();
-            System.out.println(menu);
+            System.out.print(menu);
             opcao = input.nextByte();
 
             switch (opcao) {
@@ -62,7 +62,7 @@ public class C08Ex02 {
     private static void rotAdicao() {
         double r, a, b;
 
-        System.out.println("<<< ROTINA DE ADICAO >>>\n");
+        System.out.println("\n<<< ROTINA DE ADICAO >>>\n");
 
         System.out.print("a = ");
         a = input.nextDouble();
@@ -76,7 +76,7 @@ public class C08Ex02 {
     private static void rotSubtracao() {
         double r, a, b;
 
-        System.out.println("<<< ROTINA DE SUBTRACAO >>>\n");
+        System.out.println("\n<<< ROTINA DE SUBTRACAO >>>\n");
 
         System.out.print("a = ");
         a = input.nextDouble();
@@ -90,7 +90,7 @@ public class C08Ex02 {
     private static void rotMultiplicacao() {
         double r, a, b;
 
-        System.out.println("<<< ROTINA DE MULTIPLICACAO >>>\n");
+        System.out.println("\n<<< ROTINA DE MULTIPLICACAO >>>\n");
 
         System.out.print("a = ");
         a = input.nextDouble();
@@ -98,13 +98,13 @@ public class C08Ex02 {
         b = input.nextDouble();
 
         r = a * b;
-        System.out.println(a + " * " + b + " = " + df.format(r));
+        System.out.println(a + " x " + b + " = " + df.format(r));
     }
 
     private static void rotDivisao() {
         double r, a, b;
 
-        System.out.println("<<< ROTINA DE DIVISAO >>>\n");
+        System.out.println("\n<<< ROTINA DE DIVISAO >>>\n");
 
         System.out.print("a = ");
         a = input.nextDouble();
@@ -115,7 +115,7 @@ public class C08Ex02 {
             r = a / b;
             System.out.println(a + " / " + b + " = " + df.format(r));
         } else {
-            System.out.println("Divisao por zero nao e permitida.");
+            System.out.println("Divisao por zero nao permitida.");
         }
     }
 
