@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 public class C05Ex11 {
 
 	public static void main(String[] args) {
-		String idadeTxt, alturaTxt;
+		String idadeTxt="", alturaTxt="";
 		int idade;
 		float altura;
 		
