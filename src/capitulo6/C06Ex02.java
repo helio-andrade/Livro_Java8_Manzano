@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.io.IOException;
 
-public class C08Ex02 {
+public class C06Ex02 {
     private static final Scanner input = new Scanner(System.in);
     private static final DecimalFormat df = new DecimalFormat("0.00");
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
