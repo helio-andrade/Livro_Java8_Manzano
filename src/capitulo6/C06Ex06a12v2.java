@@ -34,7 +34,7 @@ public class C06Ex06a12v2 {
                     		JOptionPane.showInputDialog("Informe o valor futuro: "));
                     double pv = Double.parseDouble(
                     		JOptionPane.showInputDialog("Informe o valor presente: "));
-                    double cterm = FinanMax.cterm(i/12, fv, pv);
+                    double cterm = FinanMax.cterm(i/12, fv, pv) / 12;
                     JOptionPane.showMessageDialog(null, 
                     		"Termo Composto: " + df.format(cterm));
                     break;
