@@ -75,7 +75,7 @@ public class C06Ex06a12v2 {
                     float paymentType = Float.parseFloat(
                             JOptionPane.showInputDialog(
                                     "Tipo (1 para adiantado, 0 para vencido): "));
-                    double paymentResult = FinanMax.pmt(pvValue, interestRate, periods, paymentType);
+                    double paymentResult = FinanMax.pmt(pvValue, interestRate/12, periods, paymentType);
                     JOptionPane.showMessageDialog(null,
                             "Pagamento: " + currencyFormat.format(paymentResult));
                     break;
