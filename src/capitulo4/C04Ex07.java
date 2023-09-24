@@ -28,6 +28,7 @@ public class C04Ex07 {
 		else
 			System.out.println("Codigo invalido!");
 		
+		s.close();
 	}
 
 }

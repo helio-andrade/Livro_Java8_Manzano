@@ -41,5 +41,7 @@ public class ConversaoDeTemperaturas {
 	        default:
 	            System.out.println("Opção inválida.");
 	    }
+	    
+	    input.close();
 	}   
 }

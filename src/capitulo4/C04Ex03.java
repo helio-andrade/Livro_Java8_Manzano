@@ -33,6 +33,7 @@ public class C04Ex03 {
 		System.out.print("\nDigite sua altura ...: " + df.format(altura) + " m");
 		System.out.println();
 
+		s.close();
 	}
 
 }

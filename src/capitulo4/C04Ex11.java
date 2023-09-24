@@ -39,6 +39,8 @@ public class C04Ex11 {
 			System.out.println("Mes invalido!");
 
 		System.out.println();
+		
+		s.close();
 	}
 
 }

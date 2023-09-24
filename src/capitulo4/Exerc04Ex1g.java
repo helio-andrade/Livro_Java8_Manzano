@@ -16,6 +16,8 @@ public class Exerc04Ex1g {
         
         System.out.println("\nTecle ENTER para sair...");
         input.nextLine(); // aguardar ENTER para sair
+        
+        input.close();
     }
 }
 

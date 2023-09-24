@@ -28,6 +28,8 @@ public class C04Ex12STR {
 			case  "doze": System.out.println("Dezembro"); 	break;
 			default: System.out.println("Mês inválido!");	break;
 		}
+		
+		s.close();
 	}
 
 }

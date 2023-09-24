@@ -28,6 +28,8 @@ public class C04Ex12 {
 			case 12: System.out.println("Dezembro"); 		break;
 			default: System.out.println("Mês inválido!");	break;
 		}
+		
+		s.close();
 	}
 
 }

@@ -28,6 +28,9 @@ public class C04Ex08 {
 			System.out.println(nome1 + " nao pode dancar com  " + nome2);
 		
 		System.out.println();
+		
+		s1.close();
+		s2.close();
 	}
 
 }

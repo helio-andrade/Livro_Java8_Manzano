@@ -10,6 +10,8 @@ public class C06Ex03 {
 		System.out.print("Digite um valor inteiro (de 0 a 25): ");
 		x = s.nextByte();
 		fatorial(x);
+		
+		s.close();
 	}
 	
 	public static void fatorial(byte n) {

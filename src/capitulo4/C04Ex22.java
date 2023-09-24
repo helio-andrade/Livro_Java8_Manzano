@@ -19,5 +19,7 @@ public class C04Ex22 {
 			System.out.println("Deseja continuar [1]SIM/[2]Não?");
 			resp = sc.nextInt();
 		} while (resp == 1);
+		
+		sc.close();
 	}
 }

@@ -23,5 +23,7 @@ public class Exerc04Ex1a {
         input.nextLine(); // limpa o buffer do teclado
         System.out.println("\nTecle ENTER para sair...");
         input.nextLine(); // aguarda o ENTER
+        
+        input.close();
     }
 }

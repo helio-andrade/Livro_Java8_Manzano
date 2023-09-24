@@ -18,6 +18,8 @@ public class C04Ex04 {
 		r = a + b;
 		
 		System.out.println("\nR = " + a + " + " + b + " = " + r);
+		
+		s.close();
 
 	}
 }

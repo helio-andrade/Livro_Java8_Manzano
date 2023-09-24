@@ -1,5 +1,4 @@
 package capitulo4;
-import java.io.*;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -17,6 +16,8 @@ public class C04Ex20 {
 		
 		df.applyPattern("#,###,###0");
 		System.out.println("Resultado = " + df.format(r));
+		
+		sc.close();
 	}
 	
 }

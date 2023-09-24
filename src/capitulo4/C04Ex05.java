@@ -23,6 +23,8 @@ public class C04Ex05 {
 		else
 			System.out.println("Resultado nao ultrapassa o valor 10.");
 		System.out.println();
+		
+		s.close();
 	}
 
 }

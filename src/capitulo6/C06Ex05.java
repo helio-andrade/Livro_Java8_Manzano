@@ -14,6 +14,8 @@ public class C06Ex05 {
 		x = s.nextByte();
 		r = C06Ex04.calcularFatorial(x);
 		System.out.println(x + "! = " + r);
+		
+		s.close();
 	}
 	
 }

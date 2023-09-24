@@ -21,7 +21,9 @@ public class C04Ex09 {
 			x = (a - b) * c;
 		
 		System.out.println("X = " + x);
-			
+		
+		
+		s.close();
 	}
 
 }

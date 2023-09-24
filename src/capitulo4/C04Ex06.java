@@ -15,6 +15,8 @@ public class C04Ex06 {
 			System.out.println("O valor esta entre 20 e 90.");
 		else
 			System.out.println("O valor nao esta entre 20 e 90.");
+		
+		s.close();
 
 	}
 

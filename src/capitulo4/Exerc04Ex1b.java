@@ -14,5 +14,7 @@ public class Exerc04Ex1b {
         
         System.out.println("\nTecle ENTER para sair...");
         sc.nextLine();
+        
+        sc.close();
     }
 }
