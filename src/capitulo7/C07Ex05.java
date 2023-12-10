@@ -7,7 +7,7 @@ public class C07Ex05 {
     }
 
     public static void main(String[] args) {
-        // Criação dos objetos Livro
+        // Criação dos objetos C07Ex06Livro
         Livro livro1 = new Livro();
         Livro livro2 = new Livro();
         Livro livro3 = livro2;
@@ -19,8 +19,8 @@ public class C07Ex05 {
 
         // Exibe os nomes dos livros
         System.out.println("\nLivro #1: " + livro1.nome);
-        System.out.println("Livro #2: " + livro2.nome);
-        System.out.println("Livro #3: " + livro3.nome);
+        System.out.println("C07Ex06Livro #2: " + livro2.nome);
+        System.out.println("C07Ex06Livro #3: " + livro3.nome);
 
         // Variáveis para os valores
         float valor1, valor2, valor3;
