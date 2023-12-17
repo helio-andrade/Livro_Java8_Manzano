@@ -1,8 +1,10 @@
 package capitulo6;
 
 import java.util.Scanner;
+
+import net.kdosh.livro.java.FinanMax;
+
 import java.text.DecimalFormat;
-import net.guiatech.livro.java.FinanMax;
 
 public class C06Ex06a12 {
     public static void main(String[] args) {

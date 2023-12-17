@@ -1,4 +1,4 @@
-package net.guiatech.livro.java;
+package net.kdosh.livro.java;
 
 public class FinanMax {
 	

@@ -1,10 +1,12 @@
 package capitulo6;
 
 import javax.swing.JOptionPane;
+
+import net.kdosh.livro.java.FinanMax;
+
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
-import net.guiatech.livro.java.FinanMax;
 
 public class C06Ex06a12v2 {
     public static void main(String[] args) {

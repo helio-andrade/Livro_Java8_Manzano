@@ -2,7 +2,7 @@ package capitulo6;
 
 import java.text.DecimalFormat;
 
-import net.guiatech.livro.java.FinanMax;
+import net.kdosh.livro.java.FinanMax;
 
 public class C06Ex06 {
 	public static void main(String[] args) {
