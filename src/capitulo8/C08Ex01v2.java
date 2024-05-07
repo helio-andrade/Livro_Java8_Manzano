@@ -3,7 +3,7 @@ package capitulo8;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class C08Ex01 {
+public class C08Ex01v2 {
     public static void main(String[] args) {
         final int NUM_ALUNOS = 8;
         float mediaAluno[] = new float[NUM_ALUNOS];
@@ -12,11 +12,11 @@ public class C08Ex01 {
         DecimalFormat df = new DecimalFormat("0.00");
         Scanner input = new Scanner(System.in);
 
-        // Utilizando um loop for para coletar as médias dos alunos
-        for (int i = 0; i < NUM_ALUNOS; i++) {
-            System.out.print("Media do " + (i+1) + "o. aluno: ");
-            mediaAluno[i] = input.nextFloat();
-            somaMedias += mediaAluno[i];
+        // Utilizando um loop for-each para coletar as médias dos alunos
+        for (float media : mediaAluno) {
+            System.out.print("Media do aluno: ");
+            media = input.nextFloat();
+            somaMedias += media;
         }
 
         mediaGeral = somaMedias / NUM_ALUNOS;
