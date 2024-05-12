@@ -21,7 +21,8 @@ public class C07Ex10 {
         System.out.println("Sala......: " + aluno.sala);
         System.out.print("Situação..: ");
 
-        if (aluno.situacao(aluno.media, 5.0))
+      //if (aluno.situacao(aluno.media, 5.0))
+        if (Aluno.situacao(aluno.media, 5.0))
             System.out.println("Aprovado!");
         else
             System.out.println("Reprovado!");
