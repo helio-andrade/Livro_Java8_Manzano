@@ -7,13 +7,13 @@ public class C05Ex10 {
 		int idade;
 		float altura;
 		
-		Scanner s = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in);
 		
 		System.out.print("Idade ....: ");
-		idade = s.nextInt();
+		idade = entrada.nextInt();
 		
 		System.out.print("Altura ...: ");
-		altura = s.nextFloat();
+		altura = entrada.nextFloat();
 		
 		if (idade <= 1)
 			System.out.println("Idade " + String.valueOf(idade) + " ano.");
