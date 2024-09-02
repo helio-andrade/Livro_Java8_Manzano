@@ -22,6 +22,6 @@ public class C05Ex10 {
 		
 		System.out.println("Altura " + String.valueOf(altura) + " cm.");
 		
-		s.close();
+		entrada.close();
 	}
 }
